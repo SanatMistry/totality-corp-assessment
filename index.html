@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+</head>
+<body onload="onload()" id="dashboard">
+    <div class="page-wrapper">
+
+        <section id="header">
+            <div class="d-flex justify-content-between">
+                <span class="cp">BACK</span>
+                <span class="doodle-wrapper cp">
+                    <div class="bucket">
+                        <span class="ball"></span>
+                    </div>
+                </span>
+            </div>
+            <div id="header-title">Chairs</div>
+        </section>
+        
+        <section id="description">
+            Cozy chairs collection for all types and kinds of lifestyleand taste
+        </section>
+        
+        <div id="product-model"></div>
+        
+        <section id="filters">
+            <ul class="list-wrapper">
+                <li class="dummy"></li>
+                <li class="dummy"></li>
+                <li class="dummy"></li>
+                <li class="dummy"></li>
+            </ul>
+        </section>
+        
+        
+        <section id="products">
+            <div class="dummy-card"></div>
+            <div class="dummy-card"></div>
+            <div class="dummy-card"></div>
+            <div class="dummy-card"></div>
+        </section>
+    
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script src="/http.js"></script>
+    <script>
+      function onload() {
+        getProducts()
+      }
+    </script>
+    
+</body>
+</html>
