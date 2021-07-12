@@ -1,8 +1,8 @@
-import './style.css'
+// import './style.css'
 
 import * as THREE from './assets/build/three.module.js';
 
-import { OBJLoader } from './assets/jsm/loaders/OBJLoader';
+import { OBJLoader } from './assets/jsm/loaders/OBJLoader.js';
 
 document.addEventListener('scroll', (e) => {
   let title = document.getElementById('header-title')
@@ -22,8 +22,6 @@ let object;
 let zoomIn = false;
 
 
-// function onProductLoad() {
-// }
 init();
 animate();
 
@@ -82,7 +80,7 @@ function init() {
 
   // load object
   const loader = new OBJLoader( manager );
-  loader.load( './assets/models/chair.obj', function ( obj ) {
+  loader.load( './assets/models/Chair.obj', function ( obj ) {
     object = obj;
   }, onProgress, onError );
 
